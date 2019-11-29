@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #222222;
+}
+
+.container-nav {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 2px solid #909090;
+  padding-bottom: 10px;
+}
+.container-nav nav {
+  color: white;
+}
+.container-nav nav ul {
+  list-style: none;
+}
+.container-nav nav ul li {
+  margin-left: 75px;
+  display: inline;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.container-nav nav ul li a {
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+}
+.container-nav nav ul li a::before {
+  color: #fff;
+  content: attr(data-hover);
+  position: absolute;
+  opacity: 0;
+  text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+  -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+.container-nav nav ul li a:hover::before, .container-nav nav ul li a:focus::before {
+  -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+  opacity: 1;
+}
+.container-nav nav ul li a:hover {
+  color: #ff3366;
+}
+.container-nav nav ul li button {
+  border: 2px solid #ff3366;
+  border-radius: 2px;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -89,8 +89,28 @@
         font-size: 20px;
         padding-top: 10px;
         text-transform: uppercase;
-
       }
     }
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  border-bottom:2px solid rgba(177, 177, 177, 0.534);
+  color: #fff;
+  .left-side {
+    position: relative;
+    width: 70%;
+    min-height: 100vh;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .right-side {
+    display:flex;
+    margin: 0;
+    padding: 20px;
+    width: 30%;
   }
 }
